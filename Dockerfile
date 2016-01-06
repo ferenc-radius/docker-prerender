@@ -1,6 +1,6 @@
-FROM node:latest
+FROM node:4.2.2
 
-MAINTAINER Corentin Kerisit "c@42.am"
+MAINTAINER Ferenc Radius
 
 RUN echo deb http://ftp.debian.org/debian/ jessie main contrib non-free > /etc/apt/source.list
 
@@ -11,7 +11,7 @@ RUN apt-get update -y && apt-get install -y \
 RUN mkdir /data
 WORKDIR /data
 
-ADD ./package.json /data/package.json
+COPY package.json /data/
 RUN cd /data && npm install
 
 ADD . /data/
