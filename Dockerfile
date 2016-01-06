@@ -14,6 +14,4 @@ WORKDIR /data
 COPY package.json /data/
 RUN cd /data && npm install
 
-ADD . /data/
-
-CMD node /data/server.js
+COPY . /data/
