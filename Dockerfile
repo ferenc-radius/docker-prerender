@@ -1,6 +1,6 @@
-FROM node:4.2.2
+FROM node:5.7.1-slim
 
-MAINTAINER Ferenc Radius
+MAINTAINER Ferenc Radius "ferenc@servicebook.link"
 
 RUN echo deb http://ftp.debian.org/debian/ jessie main contrib non-free > /etc/apt/source.list
 
