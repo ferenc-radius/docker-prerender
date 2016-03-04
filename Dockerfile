@@ -1,4 +1,4 @@
-FROM node:5.7.1-slim
+FROM node:4.3.2-slim
 
 MAINTAINER Ferenc Radius "ferenc@servicebook.link"
 
